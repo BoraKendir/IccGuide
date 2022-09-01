@@ -54,9 +54,26 @@ html{
 }
 #titlecontainer{
   display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
 }
 #picturecontainer{
   display: flex;
+  justify-content: center;
+}
+#profilepic{
+  margin: 0 10px;
+  max-width: 100%;
+  height: 20%;
+  object-fit: contain;
+}
+#achipic{
+  margin: 0 10px;
+  max-width: 100%;
+  height: 20%;
+  object-fit: contain;
 }
 #paragrafcontainer{
   display: flex;
