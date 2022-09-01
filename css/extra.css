@@ -25,3 +25,12 @@
 html{
     font-family: 'Friz Quadrata Std Medium';
 }
+#container{
+    display: flex;
+}
+#addlisteleri{
+    width: 20%;
+}
+#adddescriptions{
+    width: 80%;
+}
