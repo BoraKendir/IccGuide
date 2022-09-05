@@ -57,3 +57,11 @@ html{
     width: 400px;
     height: 400px;
 }
+#LadyArticle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}

@@ -39,16 +39,24 @@
         İlk zıplamadan sonra fight'ın heroic veya normal modda olmasına göre işimiz değişiyor<br>
     </p>
     <button onclick="picturecontainertoggle()" id="LordResimButton">Resimli anlatım için tıklayın</button>
+    <div id="LordResimler" style="display: none;">
+        <img id="lordresim1" src="../resimler/lord1.png">
+        <img id="lordresim2" src="../resimler/lord2.png">
+        <img id="lordresim3" src="../resimler/lord3.png">
+        <img id="lordresim4" src="../resimler/lord1.png">
+        <img id="lordresim5" src="../resimler/lord2.png">
+        <img id="lordresim6" src="../resimler/lord3.png">
+    </div>
     <h3>Normal --- 4 Zıplama</h3>
-    <ul>
+    <ol>
         <li>İlk zıplamanın ardından takımın içinde olduğunuzu varsayın.</li>
         <li>İkinci zıplama tanka gittiği anda<br>
             siz <--->raidin geri kalanı<--->tanklara <br>
             olacak şekilde yerleşiyoruz. Bunu yaparken raidin geri kalanından yeterince uzak durmanız lazım.</li>
         <li>Üçüncü zıplama , yukarıdaki adımı yaptıktan sonra yine size geliyor. Disengage cd'si geri dönmediği için paşa paşa raidin geri kalanında doğru geri yürüyoruz</li>
-        <li>İlk zıplamadan sonra disengage'in cd'si dönmemiş olduğundan bu sefer paşa paşa yürüyoruz</li>
+        İlk zıplamadan sonra disengage'in cd'si dönmemiş olduğundan bu sefer paşa paşa yürüyoruz
         <li>Dördüncü zıplama , tanklara gidiyor ve boss'un son konumuna göre, sonraki Bonestorm'u başlatmak için yeniden konum alıyorsunuz.</li>
-    </ul>
+    </ol>
     <h3>Heroic --- 6 Zıplama</h3>
     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBurada daha uzun bir yazı bekliyor olabilirsiniz ancak tam tersine heroic'te işler daha basit</p>
     <ul>
@@ -57,16 +65,12 @@
         <li>Bonestorm bittiğinde , Bonestorm başladığında tanklar neredeyse bu sefer siz orda oluyorsunuz
         yani aslında başladığınız yerin , odanın merkezine göre simetriğine geçiyorsunuz diyebilirim</li>
     </ul>
-    <p id="LordSonP">
+    <p>
         Bonestormdan sonraki görevimiz eğer 25m oynuyorsak , Bonespike'a giren diğer hunter'a yardım etmek
         MT'ye atıcağınız md'yi , Bonestorm sonrası hareketsiz ve full damage'a odaklanabileceğiniz bir anda atın
         Eğer fight'a aşinaysanız, Bonestorm'a 7-8sn kala ekstra bir md sıkıştırabilirsiniz
     </p>
-    <div id="LordResimler" style="display: none;">
-        <img id="lordresim1" src="../resimler/lord1.png">
-        <img id="lordresim2" src="../resimler/lord2.png">
-        <img id="lordresim3" src="../resimler/lord3.png">
-    </div>
+    
     <h2>Fightta Yapılabilecek Esktralar</h2>
     <ul>
         <li>Heroic fightlarda Bonestorm yapılırken boss aynı zamanda Bonespike castlıyo. Takıma yardım etmek için explosive trap bırakıyoruz.
@@ -79,10 +83,57 @@
     <h1 id="LadyTitle">Lady Deathwhisperer</h1>
     <h2>Fight Özeti</h2>
     <p>
-        Bu fight kesinlikle bir dps yarşı değil. Tamamen hayatta kalma ve meknaiklere saygı gösterme fight'ı. Takımın hayatta kalması için, coğu bossta olduğu gibi 
-        spesifik hunter görevlerimiz var
+        Bu fight kesinlikle bir dps yarşı değil. Tamamen hayatta kalma ve mekaniklere saygı gösterme fight'ı. Takımın hayatta kalması için, çoğu bossta olduğu gibi 
+        spesifik hunter görevlerimiz var.Şimdiden söylüyorum, bu fightta açılışta sakın cd yakmayın. cd'lerinizi 2. phase'e saklayın.
     </p>
+    <h2>Hunter görevleri</h2>
+    <p>
+        Fight'ın ilk phase'inde hunter'ın 3 önemli görevi var.<br>
+        Önem sıralasına göre bu görevler: 
+    </p>
+    <ol>
+        <li>Add gelen tarafa(10m)/Sizin belirlediğiniz veya size söylenen tanka(25m) md atmak</li>
+        <li>Deformed Fanaticlere taunt atıp kesilene kadar kite'lama</li>
+        <li>Normal/Reanimated Fanaticlere dps</li>
+    </ol>
+    <p>
+        Boss'un %1 manası kaldığında MT'ye çift md atın ve bunu yaparken hero olsa da olmasa da rapid fire kullanın.
+        Bunu yapmazsanız boss anında melee dps'i kesicek ve azar işiticeksiniz. İlk aggro verildikten sonra cd döndükçe durmadan feign death atın.
+        Takımınıza bağlı olarak tanklara md atın. Mesela 3 stack debuffta tank değişiyorsanız md'nizi bekletin, 5 stack debuffta tank değişiyorsanız çift md'den sonra 2 belki 3 md daha zamanınız var.
+        Spiritlerden kaçın, bunu en rahat yapan classlardan biriyiz.          
+    </p>
+    <h2>Fightta Yapılabilecek Esktralar</h2>
+    <ul>
+        <li>
+        Mananız azalmaya başladığında boss'a mana çeken sting'den atabilirsiniz. Skill'in açıklamasını okuyunca aslında "Bu boss'a neden serpent atayım ki bu mana çekmeyle mana bariyerini patlatırım"
+        diyebilirsiniz ancak Blizzard bunu önceden düşünmüş ve skillden emebildiğiniz manayı cap'lemiş , gear'ınız düşükse ve mananız hızlı bitiyorsa addler yokken mana emen sting atın ama gear yüksekse (5.7+) serpent atıp damage çıkarmanız bosstan daha çok mana götürür.
+        </li>
+        <li>
+            10m heroic fightında mc yiyince herkesi kesebileceğini düşündüğünüz caster'ların ayağına dbm'e bakarak freeze trap atabilirsiniz. Rng tutarsa ve druidinizin uykusu varsa bu hareket 1pyro veya üzerinize koşan bi paladini(iki durumda da aoe yiyip freeze trapin bozulmadığını varsayarak) durdurabilirsiniz.            
+        </li>
+        <li>Bu biraz fazla spesifik ama <a href="https://wowwiki-archive.fandom.com/wiki/Full_House_(25_player)">Full House</a>
+        deniyorsanız, bütün fight'ı siz yönetebilirsiniz çünkü sizin tek işiniz Deformed Fanatic kite'lamak ve bu iş (deneyimliyseniz) inanılmaz basit.</li>
+    </ul>
+    </div>
+    <div id="GunshipArticle">
+    <h1 id="GunshipTitle">Gunship Battle</h1>
+    <h2>Fight Özeti</h2>
+    <p>
+        Instance'daki en beleş bossu olabilir. İnanılmaz basit bir fight. Bir resim üzerinde herşey anlatılabilir.
+    </p>
+    <h2>Hunter Görevleri</h2>
+    <p>
+        Öncelikle pet'imize dismiss atıyoruz. Petler genel olarak bu kadar mekan değişikliği dolu bi fightta kafayı yiyebiliyorlar. Bundan kurtulmanın ne güzel yöntemi peti komple denklemden kaldırmak.
+        Her boss'ta olduğu gibi öncelik tanklarda aggro olması. Bu fightta gemideki tanka add çıktığında(daha öncesinde atmayın) gelen addleri tanka yönlendirmeniz yeter.
+        Karşıda mage çıkınca atlayıp dps atıp geri dönüyoruz. Boş zamanlarda karşıdaki gemiye volley atın yeter. 
+    </p>
+    <img src="../resimler/gunship.png" alt="Gunship Battle">
+    <h2>Fightta Yapılabilecek Esktralar</h2>
+    <ul>
+        <li>Resimde gösterdiğim yolla addleri buglayabilirsiniz</li>
+    </ul>
+    <p>Başka da bir ekstra yok, zaten dümdüz, basit bir fight.</p>
+    </div>
 
-    </div>            
 </body>
 </html>
