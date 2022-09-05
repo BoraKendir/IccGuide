@@ -25,3 +25,35 @@
 html{
     font-family: 'Friz Quadrata Std Medium';
 }
+.LowerTitle{
+    text-align: center;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar a{
+    text-decoration: none;
+    color: black;
+    margin: 0 1rem;
+}
+#navbar a:hover{
+    text-decoration: underline;
+    font-family: 'Friz Quadrata Std Italic';
+}
+#LordArticle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+}
+#LordResimler img{
+    width: 400px;
+    height: 400px;
+}
