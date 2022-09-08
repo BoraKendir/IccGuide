@@ -53,9 +53,9 @@ html{
     justify-content: center;
     align-items: flex-start;
 }
-#LordResimler img{
+#LordResimlerNM img,#LordResimlerHC img{
     width: 400px;
-    height: 400px;
+    height: 350px;
 }
 #LadyArticle{
     display: flex;
@@ -64,4 +64,30 @@ html{
     align-content: center;
     justify-content: center;
     align-items: flex-start;
+}
+#GunshipArticle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+#GsResim{
+    align-self: center;
+    width: 50%;
+    height: 400px;
+}
+#DbsArticle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+#DbsResim{
+    align-self: center;
+    width: 50%;
+    height: 400px;
 }

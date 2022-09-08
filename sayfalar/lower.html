@@ -38,15 +38,6 @@
         Bunu yaptığınız anda boss , Bonestorm cast'ı bittiği anda sizin üzerinize geliyor. Siz de size doğru gelen takımın içerisine Disengage atıyorsunuz.
         İlk zıplamadan sonra fight'ın heroic veya normal modda olmasına göre işimiz değişiyor<br>
     </p>
-    <button onclick="picturecontainertoggle()" id="LordResimButton">Resimli anlatım için tıklayın</button>
-    <div id="LordResimler" style="display: none;">
-        <img id="lordresim1" src="../resimler/lord1.png">
-        <img id="lordresim2" src="../resimler/lord2.png">
-        <img id="lordresim3" src="../resimler/lord3.png">
-        <img id="lordresim4" src="../resimler/lord1.png">
-        <img id="lordresim5" src="../resimler/lord2.png">
-        <img id="lordresim6" src="../resimler/lord3.png">
-    </div>
     <h3>Normal --- 4 Zıplama</h3>
     <ol>
         <li>İlk zıplamanın ardından takımın içinde olduğunuzu varsayın.</li>
@@ -57,6 +48,14 @@
         İlk zıplamadan sonra disengage'in cd'si dönmemiş olduğundan bu sefer paşa paşa yürüyoruz
         <li>Dördüncü zıplama , tanklara gidiyor ve boss'un son konumuna göre, sonraki Bonestorm'u başlatmak için yeniden konum alıyorsunuz.</li>
     </ol>
+    <span>Resimlerin üzerine gelince imlecin olduğu yerde çıkan tooltip, size resimlerin sırasını gösterecektir</span>
+    <button onclick="picturecontainertoggle('NM')" id="LordResimButtonNM">Resimli anlatım için tıklayın</button>
+    <div id="LordResimlerNM" style="display: none;">
+        <img id="lordresimNM1" src="../resimler/LordBS1NM.png" alt="İlk Zıplama" title="İlk Zıplama">
+        <img id="lordresimNM2" src="../resimler/LordBS2NM.png" alt="İkinci Zıplama" title="İkinci Zıplama" >
+        <img id="lordresimNM3" src="../resimler/LordBS3NM .png" alt="Üçüncü Zıplama" title="Üçüncü Zıplama">
+        <img id="lordresimNM4" src="../resimler/LordBS4NM .png" alt="Dördüncü ve son Zıplama" title="Dördüncü ve son Zıplama">
+    </div>
     <h3>Heroic --- 6 Zıplama</h3>
     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBurada daha uzun bir yazı bekliyor olabilirsiniz ancak tam tersine heroic'te işler daha basit</p>
     <ul>
@@ -65,6 +64,15 @@
         <li>Bonestorm bittiğinde , Bonestorm başladığında tanklar neredeyse bu sefer siz orda oluyorsunuz
         yani aslında başladığınız yerin , odanın merkezine göre simetriğine geçiyorsunuz diyebilirim</li>
     </ul>
+    <span>Resimlerin üzerine gelince imlecin olduğu yerde çıkan tooltip, size resimlerin sırasını gösterecektir</span>
+    <button onclick="picturecontainertoggle('HC')" id="LordResimButtonHC">Resimli anlatım için tıklayın</button>
+    <div id="LordResimlerHC" style="display: none;">
+        <img id="lordresimHC1" src="../resimler/LordBS1HC.png" alt="İlk Zıplama" title="İlk Zıplama">
+        <img id="lordresimHC2" src="../resimler/LordBS2HC.png" alt="İkinci Zıplama" title="İkinci Zıplama">
+        <img id="lordresimHC3" src="../resimler/LordBS3HC.png" alt="Üçüncü Zıplama" title="Üçüncü Zıplama">
+        <img id="lordresimHC4" src="../resimler/LordBS4HC.png" alt="Dördüncü Zıplama" title="Dördüncü Zıplama">
+        <img id="lordresimHC5" src="../resimler/LordBS5HC.png" alt="Beşinci ve son Zıplama" title="Beşinci ve son Zıplama">
+    </div>
     <p>
         Bonestormdan sonraki görevimiz eğer 25m oynuyorsak , Bonespike'a giren diğer hunter'a yardım etmek
         MT'ye atıcağınız md'yi , Bonestorm sonrası hareketsiz ve full damage'a odaklanabileceğiniz bir anda atın
@@ -127,13 +135,48 @@
         Her boss'ta olduğu gibi öncelik tanklarda aggro olması. Bu fightta gemideki tanka add çıktığında(daha öncesinde atmayın) gelen addleri tanka yönlendirmeniz yeter.
         Karşıda mage çıkınca atlayıp dps atıp geri dönüyoruz. Boş zamanlarda karşıdaki gemiye volley atın yeter. 
     </p>
-    <img src="../resimler/gunship.png" alt="Gunship Battle">
+    <img id="GsResim"src="../resimler/gunship.png" alt="Gunship Battle" title="Gunship Battle haritası">
     <h2>Fightta Yapılabilecek Esktralar</h2>
     <ul>
         <li>Resimde gösterdiğim yolla addleri buglayabilirsiniz</li>
+        <li>Buglayamıyorsanız ice trap açarak addlerin healerlara gitmesini yavaşlatabilirsiniz</li>
     </ul>
     <p>Başka da bir ekstra yok, zaten dümdüz, basit bir fight.</p>
     </div>
-
+    <div id="DbsArticle">
+    <h1 id="DbsTitle">Deathbringer Saurfang</h1>
+    <h2>Fight Özeti</h2>
+    <p>
+        Bu fight , patchteki en acımasız add fightlarından biri. Bu fightta <a href="https://github.com/bkader/Skada-WoTLK">skadasını düzgünce</a> kurmuş bir RL, size ve diğer tüm range dps'lere özellikle bakacak.
+        Fightın yarısı addlere vurmakla , geri kalanı iste addlere dalarken kaybettiğiniz manayı geri kazanmak için boss'a vurmakla geçicek.
+        Pozisyon değişikliği olmadığı için bol bol steady shot ile damage çıkaracağımız fighttaki görevlerimize gelelim.
+    </p>
+    <h2>Hunter görevleri</h2>
+    <p>
+        Görevlerimiz sırasıyla şunlar:
+    </p>
+    <ul>
+        <li>Crossfire'ınız bittikten sonra, <span style="font-weight: bolder;">öncelikle </span>tanklardan birinin taunt attığı add'e taunt atıp o add'e abanmanız lazım</li>
+        <span>Crossfire'dan(Çapraz ateş) kast ettiğim şey ne mi?</span>
+        <ul>
+            <li>Resimde 1 numaralı kutucukta oynuyorsak, icy trap'imizi 2'ye bırakıp, kutucuğumuza dönüp boss'un üstünde 1 numaralı taraftan çıkan addlere vurmak</li>
+            <li>Resimde 2 numaralı kutucukta oynuyorsak, icy trap'imizi 1'e bırakıp, kutucuğumuza dönüp boss'un üstünde 2 numaralı yere vurmak</li>
+            <li>Eğer raiddeki tek huntersanız(diğeri ölmüşse, bu boss'a tek hunter giden neredeyse hiç görmedim) veya 10m'de oynuyorsanız, icy trap tam boss'un üstüne veya üçgendeki yere atılır ama çapraz ateş ilkesi aynen devam</li>
+        </ul>
+        <li><span style="font-weight: bolder;">Kesinlikle ama kesinlikle </span>add'lerin size vurmasına izin vermemek</li>
+        <li>Ekranda add görmüyorsanız boss'a olabildiğince dps atmak</li>
+    </ul>
+    <img id="DbsResim" src="../resimler/DBS.jpg" alt="DBS" title="DBS Haritası">
+    <h2>Fightta Yapılabilecek Esktralar</h2>
+    <ul>
+        <li>Eğer traplerinizi kullanmaya hakimseniz, açılışta tank'a inanılmaz bir aggro yüklemek için traplerinizi de açılışınıza dahil edin(Readinesstan sonra da trap atmaktan bahsediyorum)</li>
+        <li>Freeze traptan sonra , sizin vurmayacağınız bir add'e ekstra dps çıkarmak için immolation trap bırakabilirsiniz. Bunu her add dalgasında yapmanız sizi mana bakımından zorlayabilir, boss'a dps atarken daha uzun süre Viper aspect'de oynarsınız</li>
+        <li>Petiniz boss'da olduğu için, eğer skillerinizde /petattack macrosu varsa, pet sizden önce add'lere gidecek ve bunun sonucunda add size odaklanmadan petinize vuracak. Bu vuruş normal'de pet'e tek atmaz, heroic'te ise petteki bufflara göre tek atabilir. Ama pet ölse de ölmese de, bu vuruş yüzünden boss'un power barı dolucak. 
+            Bunu önlemek için add'ler gelmeden hemen önce hızlıca peti yanımıza çekebiliriz
+            veya add'e taunt atabiliriz. Add'e taun atmak, size bir gcd harcatır ama add'in tank harici birine gitme ihtimalini 0'a indirir. Yüksek bir gs'ye sahipseniz zaten artık taunt atmadan add'i üstünüzde tutabildiğiniz için peti geri getirmenize gerek kalmayacaktır 
+            ancak düşük(&lt;5700)) gs'lerde hem bu maddenin başındaki sebepten, hem de add'i üstüne getirememe riskini 0'a indirmek amacıyla taunt atmanızı öneririm
+        </li>
+    </ul>
+    </div>
 </body>
 </html>
