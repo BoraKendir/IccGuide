@@ -41,13 +41,16 @@ html{
 #navigationlist h3,#navigationlist li{
   text-align: center;
 }
-#navigationlist a{
+#navigationlist a{ 
+  flex: 1;
+  color: rgb(0, 0, 0);
+  text-align: center;
   text-decoration: none;
-  color: black;
+  transition: all 0.5s ease-out;
 }
 #navigationlist a:hover{
+  color:rgb(200, 38, 38);
   text-decoration: underline;
-  font-family: 'Friz Quadrata Std Italic';
 }
 #navigationlist a:active{
   color: aqua;
