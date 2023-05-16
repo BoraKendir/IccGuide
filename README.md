@@ -4,6 +4,5 @@ Hunterlar İçin ICC Raid Guide
 Projenin amacı
 --------------
 
-* Öncelikle Hunter oynayan arkadaşlara yardımcı olmak
-* Sadece HTML-CSS-JS kullanarak bir websitesi üretmek
-* Hunter'a Huntard diyenlerin bizim neler çektiğimizi görmesi
+* HTML-CSS-JS kullanarak bir websitesi üretmek
+* Text tabanlı oyun rehberlerini hep sevmişimdir, kendimin de bir tane olmasını isterim açıkcası
